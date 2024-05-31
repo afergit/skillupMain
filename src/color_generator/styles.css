@@ -1,0 +1,128 @@
+:root {
+    --header-color: #ffffff;
+  }
+  
+  * {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .header h1 {
+    flex: 1 1 auto;
+  }
+  
+  .color-generator-container {
+    flex: 1 1 auto;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .color-label {
+    font-size: 40px;
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  .generate-button {
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .generate-button:hover {
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+  }
+  
+  .gear-button {
+    padding: 10px;
+    border-radius: 100%;
+  
+    position: relative;
+    top: 0;
+  
+    transition: all 0.3s ease;
+  }
+  
+  .gear-button:hover {
+    background-color: rgb(217, 217, 217);
+    top: 1px;
+    cursor: pointer;
+  }
+  
+  .gear-button-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .option-panel {
+    margin-right: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 9px;
+    left: 50px;
+    display: flex;
+    transition: all 0.3s ease;
+  }
+  
+  .hide-panel {
+    top: -100px;
+  }
+  
+  .option-panel option {
+    padding: 9px 10px;
+    background-color: rgb(226, 226, 226);
+  
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .option-panel #rgb {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .option-panel #hex {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  
+  .option-panel option:hover {
+    background-color: rgb(201, 201, 201);
+    top: 1px;
+    cursor: pointer;
+  }
+  
+  .option-selected {
+    background-color: rgb(201, 201, 201);
+  }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Color Generator</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <button class="gear-button">
+          <img src="../assets/gear.svg" class="gear-button-icon" alt="gear icon">
+        </button>
+        <div class="hide-panel option-panel">
+          <option id="hex" class="op" value="hex">hex</option>
+          <option id="rgb" class="op option-selected" value="rgb">rgb</option>
+        </div>
+        <h1>Random Color Generator</h1>
+      </header>
+      <div class="color-generator-container">
+        <div class="color-label">color-label</div>
+        <button class="generate-button">Generate</button>
+      </div>
+    </div>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
